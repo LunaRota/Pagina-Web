@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+@font-face{
+	font-family:"Bubbler";
+	src:url("../font/BubblerOne-Regular.ttf");
+}
+
+@font-face{
+	font-family: "Chilanka";
+	src:url("../font/Chilanka-Regular.ttf");
+}
+
+@font-face{
+	font-family: "Redes";
+	src:url("../font/Grunge-Social-Media.ttf");
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.apartado{
+    text-align: center;
+    padding: 70px;
+}
+
+
+
+  .uno{
+    background-image: url("../img/slideshow-9.jpg");
+    background-size: cover;
+    align-items: center;
+      height: 100vh;
+      width: 100%;
+    }
+
+    nav{
+      width: 100%;
+      text-align: right;
+      background-color: rgba(0, 0, 0,.5);
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+        
+      a{
+        display: inline-block;
+        color: #ffffff;
+        padding: 10px 2px;
+        margin-right: 25px;
+        text-decoration: none;
+        font-family: 'Zen Loop', cursive;
+        font-size: 2rem;
+      }
+    
+      a:hover{
+        font-weight: 600;
+      }  
+
+
+    #parte1{
+      width:40%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      color: #fff;
+      text-align: center;
+    }
+      
+      h4 {
+        font-family: 'Zen Loop', cursive;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        letter-spacing: 3px;
+      }
+        
+      #tendencia { 
+        font-family: Chilanka, cursive;
+        font-size: 4rem;
+        margin-bottom: 50px;
+      }
+        
+      h3 {
+        font-family: Bubbler, cursive;
+        font-size: 1.2rem;
+        letter-spacing: 3px;}
+    
+  .dos{
+    background-color: whitesmoke; 
+    height: 100vh; 
+  }
+
+  .img-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+/**/
+.dos .img-container h3{
+  margin: 0 20px;
+}
+
+  .box{
+    position: relative;
+    width: 25%;
+  }
+  .box img{
+    width:60%;
+  }
+  .precio {
+    font-family: Bubbler, cursive;
+    font-size: 1rem;
+    letter-spacing: 1px;}
+
+    p{
+      text-align: center;
+    }
+
+
+    figure{
+      width: 30%;
+      display: inline-block;
+      margin: 0 10px;
+    }
+    figure img{
+      width: 80%;
+    }
+
+    figure h3{
+      font-size:1.5rem;
+      font-family: 'Permanent Marker', cursive;
+      background-color:rgba(255, 255, 255,0.5);	
+      width:250px;
+      text-align:center;
+    }
+      
+      
+      figcaption{
+        font-size:1.2rem;
+        color:#000;
+        text-align:justify;
+        background-color:whitesmoke;	
+        padding: 10px;
+        font-family: Bubbler, cursive;
+        font-weight: 600;
+        line-height: 1.5em;
+      }
+
+      figcaption>span{
+        font-size:1rem;
+        color:#000;
+        text-align:justify;
+        background-color:whitesmoke;	
+        padding: 10px;
+        font-family: Bubbler, cursive;
+        font-weight: 300;
+      }
+      
+      
+/**/  
+  .tres{
+    background:url(https://placeimg.com/1280/720/tech) no-repeat fixed;
+    background-size: cover;
+    padding: 70px 0 10px 0;
+    height: 100vh;
+  }
+
+  /*chef*/
+  .cuatro{
+    background-color: #CDAA7C;
+    height: 100vh;
+  }
+
+/*slider*/
+.cinco{
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.cinco div {
+  flex: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+#i1{
+  background-image: url("../img/slideshow-10.jpg");
+  background-position: right center;
+}
+#i2{
+  background-image: url("../img/slideshow-11.jpg");
+  background-position: right center;
+}
+#i3{
+  background-image: url("../img/slideshow-8.jpg");
+  background-position: right center;
+}
+#i4{
+  background-image: url("../img/slideshow-9.jpg");
+  background-position: right center;
+}
+.cinco>div:hover {
+  flex: 4;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*footer*/
+footer{
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+  #redes, footer>span{
+    display: inline-block;
+  }
+
+  #redes{
+    text-align: left;
+    padding: 10px 20px 0 10px;
+  }
+
+    #redes a{
+      font-family: Redes;
+      font-size: 1.6rem;
+    }
+
+  footer>span{
+    padding: 0 20px;
+    font-size:1rem;
+    color: #fff;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: right;
+  }
+    

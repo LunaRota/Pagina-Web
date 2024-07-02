@@ -1,0 +1,99 @@
+/*Tabletas*/
+@media screen and (max-width:1023px) and (min-width:768px) {
+
+    .uno{
+        background-image: url("../img/slideshow-9.jpg");
+        background-size: cover;
+        align-items: center;
+        background-position: 50% 20%;
+        height: 100vh;
+        width: 100%;
+        }
+
+        #parte1{
+            width:40%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;/*movi*/
+            align-items: center;
+            padding: 90px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .cinco{
+            display: none;
+        }
+
+        .tres .cuatro .dos{
+            height: auto;
+        }
+}
+
+
+
+/*Movil*/
+@media screen  and (max-width:767px) {
+
+    nav{
+        display: none;
+    }
+    .uno{
+        background-image: url("../img/slideshow-9.jpg");
+        background-color: rgb(183, 29, 29);
+        background-size: 600PX auto;
+        background-repeat: no-repeat;
+        background-position:center bottom;
+        align-items: center;
+        height: 100vh;
+        width: 100%;   
+    }
+
+    .uno, .tres, .cuatro, .dos{
+        height: auto;
+    }
+
+    #parte1{
+        width:100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;/*movi*/
+        align-items: center;
+        padding: 90px;
+        color: #801393;
+        text-align: center;
+    }
+
+    .img-container{
+        display: inline;
+    }
+
+    .cinco{
+        display: none;
+    }
+
+    .box{
+        position: relative;
+        width: 100%;
+        margin-bottom:10px ;
+    }
+
+    .box:nth-child(odd){
+        display:none;
+    }
+
+    figure{
+        width: 100%;
+        margin:20px;
+    }
+
+    figure>figcaption>span{
+        display: none;
+    }
+
+    footer{
+        flex-wrap: wrap-reverse;
+    }
+}
